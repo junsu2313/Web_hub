@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg-top: #f4f6f7;
   --bg-bottom: #e9edf0;
   --surface: rgba(255, 255, 255, 0.78);
@@ -85,21 +85,17 @@ a {
   flex-wrap: wrap;
 }
 
-.nav a {
+.nav a,
+.theme-toggle {
   padding: 10px 14px;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
   background: rgba(255, 255, 255, 0.42);
+  font: inherit;
 }
 
 .theme-toggle {
-  padding: 10px 14px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--text);
-  background: var(--surface-strong);
-  font: inherit;
   cursor: pointer;
 }
 
