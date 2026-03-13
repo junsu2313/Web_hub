@@ -95,6 +95,13 @@ a {
   font: inherit;
 }
 
+:root[data-theme="dark"] .nav a,
+:root[data-theme="dark"] .theme-toggle {
+  color: #eef2f6;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
 .theme-toggle {
   cursor: pointer;
 }
