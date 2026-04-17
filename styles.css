@@ -400,10 +400,10 @@ a {
 .notice-date-tab span {
   width: fit-content;
   padding: 4px 8px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(21, 24, 27, 0.2);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.48);
-  color: var(--muted);
+  background: rgba(21, 24, 27, 0.08);
+  color: var(--accent);
   font-size: 0.78rem;
   line-height: 1;
 }
