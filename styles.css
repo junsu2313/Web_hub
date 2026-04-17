@@ -346,34 +346,45 @@ a {
 
 .notice-tabs-card {
   width: fit-content;
-  padding: 12px;
+  padding: 14px;
   border-radius: 24px;
 }
 
 .notice-date-list {
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 
 .notice-date-tab {
+  position: relative;
   display: grid;
-  gap: 4px;
+  gap: 8px;
   width: fit-content;
-  min-width: 118px;
-  padding: 16px 12px 16px 18px;
+  min-width: 132px;
+  padding: 17px 16px 17px 20px;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 8px;
   background: var(--surface);
   color: var(--muted);
-  box-shadow: var(--shadow);
+  box-shadow: none;
   font: inherit;
   text-align: left;
   cursor: pointer;
-  transition: transform 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.notice-date-tab::before {
+  content: "";
+  position: absolute;
+  inset: 10px auto 10px 9px;
+  width: 3px;
+  border-radius: 999px;
+  background: transparent;
 }
 
 .notice-date-tab:hover {
   transform: translateY(-2px);
+  border-color: var(--line-strong);
 }
 
 .notice-date-tab.is-active {
@@ -382,9 +393,19 @@ a {
   background: var(--surface-strong);
 }
 
+.notice-date-tab.is-active::before {
+  background: var(--accent);
+}
+
 .notice-date-tab span {
+  width: fit-content;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.48);
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
+  line-height: 1;
 }
 
 .notice-date-tab strong {
