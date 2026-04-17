@@ -237,6 +237,90 @@ a {
   margin-top: 8px;
 }
 
+.text-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.content-panel {
+  padding: 30px;
+}
+
+.content-panel + .content-panel {
+  margin-top: 18px;
+}
+
+.content-panel h2,
+.content-panel h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.content-panel h2 {
+  font-size: 1.18rem;
+}
+
+.content-panel h3 {
+  font-size: 1rem;
+}
+
+.content-panel p,
+.content-panel li {
+  color: var(--muted);
+}
+
+.content-panel p {
+  margin: 12px 0 0;
+}
+
+.content-panel ul {
+  margin: 14px 0 0;
+  padding-left: 19px;
+}
+
+.content-panel li + li {
+  margin-top: 8px;
+}
+
+.notice-list,
+.policy-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.notice-item,
+.policy-item {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+}
+
+.notice-meta {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.page-actions a {
+  padding: 11px 15px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  color: var(--muted);
+  background: var(--surface-strong);
+}
+
 .footnote {
   display: flex;
   align-items: center;
@@ -293,7 +377,8 @@ a {
   }
 
   .service-panel,
-  .info-block {
+  .info-block,
+  .content-panel {
     padding: 22px 20px;
   }
 
