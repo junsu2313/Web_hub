@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://underlab.work/sitemap.xml
+Sitemap: https://underlab.work/sitemap-all.xml
