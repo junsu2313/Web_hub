@@ -186,6 +186,10 @@ a {
   background: var(--surface-strong);
 }
 
+.service-line-spaced {
+  margin-top: 18px;
+}
+
 .service-copy strong {
   display: block;
   margin-bottom: 6px;
